@@ -20,7 +20,7 @@ This code is an implementation of the BO in Python 3 using NumPy and SciPy.
 First, one should define the underlying GP model;
 
 ```python
-from src.pybopt import GaussianProcess
+from pybopt import GaussianProcess
 
 gp = GaussianProcess(
     length_scale=...,  # the characteristic length inside the Gaussian kernel
@@ -34,7 +34,7 @@ The `length_scale` parameter can be a single float or a numpy array of floats,
 Next, we can define the BO object;
 
 ```python
-from src.pybopt import BayesianOptimizer
+from pybopt import BayesianOptimizer
 
 bo = BayesianOptimizer(
     gaussian_process=gp,
