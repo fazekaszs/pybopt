@@ -15,6 +15,23 @@ Values belonging to these points are noisy, and the algorithm handles this noise
 
 This code is an implementation of the BO in Python 3 using NumPy and SciPy.
 
+## Installation
+
+The package can be installed from PyPI:
+
+```bash
+pip install pybopt
+```
+
+or it can be installed from source:
+
+```bash
+git clone https://github.com/fazekaszs/pybopt
+cd pybopt
+python -m build
+pip install dist/pybopt-*.whl
+```
+
 ## API
 
 First, one should define the underlying GP model;
